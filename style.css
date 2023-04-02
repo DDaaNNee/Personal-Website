@@ -25,6 +25,12 @@ header h1 {
   letter-spacing: 2px;
 }
 
+.header-border {
+  height: 2px;
+  background-color: #fff;
+  margin: 10px 0;
+}
+
 header nav {
   display: flex;
   justify-content: center;
@@ -76,21 +82,4 @@ main p {
 
 .button {
   background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  display: inline-block;
-  transition: all 0.3s ease;
-}
-
-.button:hover {
-  background-color: #555;
-}
-
-/* Style the footer */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-}
+ 
