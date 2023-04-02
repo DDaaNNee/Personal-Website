@@ -26,11 +26,13 @@ header nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  text-align: center; /* Add this line to center the items */
 }
 
 header nav ul li {
   display: inline-block;
   margin-right: 20px;
+  vertical-align: middle; /* Add this line to vertically center the items */
 }
 
 header nav ul li a {
