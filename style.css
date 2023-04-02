@@ -26,13 +26,13 @@ header nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center; /* Add this line to center the items */
+  text-align: center;
 }
 
 header nav ul li {
   display: inline-block;
   margin-right: 20px;
-  vertical-align: middle; /* Add this line to vertically center the items */
+  vertical-align: middle;
 }
 
 header nav ul li a {
@@ -73,4 +73,40 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+  
+  header h1 {
+    font-size: 28px;
+  }
+  
+  header nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  header nav ul li a {
+    font-size: 16px;
+  }
+  
+  main {
+    padding: 0 10px;
+  }
+  
+  main h2 {
+    font-size: 20px;
+  }
+  
+  main p {
+    font-size: 16px;
+  }
+  
+  footer {
+    padding: 10px;
+  }
 }
