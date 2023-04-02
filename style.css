@@ -7,7 +7,8 @@
 
 /* Set a background color for the page */
 body {
-  background-color: #f1f1f1;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
 }
 
 /* Style the header */
@@ -15,34 +16,58 @@ header {
   background-color: #333;
   color: #fff;
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header h1 {
   font-size: 36px;
   margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+header nav {
+  display: none;
 }
 
 header nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 header nav ul li {
-  display: inline-block;
-  margin-right: 20px;
-  vertical-align: middle;
+  margin-left: 20px;
+}
+
+header nav ul li:first-child {
+  margin-left: 0;
 }
 
 header nav ul li a {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
+  transition: all 0.3s ease;
 }
 
 header nav ul li a:hover {
   text-decoration: underline;
+  color: #f9f9f9;
+}
+
+.toggle-nav {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 10px;
+  display: none;
 }
 
 /* Style the main content */
@@ -53,60 +78,11 @@ main {
 }
 
 main h2 {
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 20px;
 }
 
 main p {
   font-size: 18px;
   line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-/* Style the footer */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-footer p {
-  margin: 0;
-}
-
-/* Media queries */
-@media screen and (max-width: 768px) {
-  header {
-    padding: 10px;
-  }
-  
-  header h1 {
-    font-size: 28px;
-  }
-  
-  header nav ul li {
-    display: block;
-    margin: 10px 0;
-  }
-  
-  header nav ul li a {
-    font-size: 16px;
-  }
-  
-  main {
-    padding: 0 10px;
-  }
-  
-  main h2 {
-    font-size: 20px;
-  }
-  
-  main p {
-    font-size: 16px;
-  }
-  
-  footer {
-    padding: 10px;
-  }
-}
+  margin
